@@ -1,0 +1,9 @@
+<html>
+  <body>
+    <%= form_tag(search_recipes_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :cuisine, params[:cuisine], placeholder: "Cuisine name" %><br>
+      <%= text_field_tag :ingredient, params[:ingredient], placeholder: "Ingredient Name" %><br>
+      <%= submit_tag "Search", class: "btn btn-outline-primary" %> 
+    <% end %>
+  </body>
+</html>
